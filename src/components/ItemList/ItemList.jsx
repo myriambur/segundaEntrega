@@ -2,12 +2,10 @@ import React from 'react'
 import Item from '../Item/Item'
 import './ItemList.css'
 
-export const ItemList = ({products}) => {
+export const ItemList = ({data=[]}) => {
     return (
     <div className="lista">
-        {products.map(prd => <Item key={prd.id} {...prd} />)}
+        {data.map(prd => <Item key={prd.id} data={prd} />)}
     </div>
     )
 }
-
-export default ItemList

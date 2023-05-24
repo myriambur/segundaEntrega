@@ -1,29 +1,24 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import { getProductById } from '../../products_mock'
 import { ItemDetail } from '../ItemDetail/ItemDetail'
 import './ItemDetailContainer.css'
 import { useParams } from 'react-router-dom'
+import { getFirestore, doc, getDoc } from 'firebase/firestore'
 
 export const ItemDetailContainer = () => {
-    
-    const [product, setProduct] = useState(null)
-    
-    const { itemId } = useParams() 
+    const [data, setData] = useState({})
+
+    const { detalleId } = useParams()
 
     useEffect(() => {
-        getProductById(itemId)
-        .then(response => {
-            setProduct(response)
-        })
-        .catch(error => {
-            console.error(error)
-        })
-    }, [itemId])
-    
+
+        const querydb = getFirestore()
+        const queryDoc = doc(querydb, 'Items', detalleId)
+        getDoc(queryDoc)
+            .then(res => setData({ id: res.id, ...res.data() }))
+    }, [])
+
     return (
-        <div className="itmDtl">
-            <ItemDetail {...product} />
-        </div>
+        <ItemDetail data={data} className='itmDtl'/>
     )
 }

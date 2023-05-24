@@ -38,6 +38,7 @@
 .card .contenido {
     padding: 15px;
     text-align: center;
+    
 }
 
 .card .contenido p {
@@ -48,6 +49,7 @@
 .card .contenido h3 {
     font-weight: 400;
     margin-bottom: 15px;
+    padding: 10px 20px;
 }
 
 .card .contenido a {
@@ -64,4 +66,7 @@
 .card .contenido a:hoover {
     background: #2fb4cc;
     color: #fff;
+}
+.link{
+    text-decoration: none;
 }

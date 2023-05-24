@@ -1,22 +1,24 @@
+import React, { useState } from 'react'
 import './Item.css'
 import { Link } from 'react-router-dom'
 
-const Item = ({ id, name, img, category,detail }) => {
+const Item = ({ data }) => {
+
     return (
-        <div className='container'>
-            <div className='card'>
-                <figure className='card-figure'>
-                    <img src={img} alt={name} />
-                </figure>
-                <div className='contenido'>
-                    <h3>{name}</h3>
-                    <p >Detalle: {detail}</p>
-                    <Link to={`/item/${id}`} >
-                        <p>Ver detalle</p>
-                    </Link>
+
+        <Link to={`/detalle/${data.id}`} className='link' >
+            <div className='container'>
+                <div className='card'>
+                    <figure className='card-figure'>
+                        <img src={data.img} alt="" />
+                    </figure>
+                    <div className='contenido'>
+                        <p>${data.price}</p>
+                        <h3>{data.name}</h3>
+                    </div>
                 </div>
             </div>
-        </div>
+        </Link >
     )
 }
 

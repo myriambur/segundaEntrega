@@ -1,0 +1,46 @@
+.ccc{
+    display: flex;
+    align-items: center;
+}
+
+.counter{
+    border:none;
+    background-color:darkgoldenrod;
+    border-radius:5px;
+    font-weight: 800px;
+    color:white;
+    cursor:pointer;
+    width: 100%;
+    margin: 20px;
+    padding: 12px;
+    margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+h1{text-align:center;}
+section{
+    text-align: center;
+    margin:50px auto;
+}
+
+.btnClick{
+    border:none;
+    background-color: burlywood;
+    border-radius:5px;
+    font-size:18px;
+    font-weight: 800px;
+    color:white;
+    cursor:pointer;
+    width: 30px;
+    
+
+}
+.btnClick:hover{
+    background-color: brown;
+}
+#contarClick{
+    font-size:45px;
+    font-weight: 800;
+    font-family: 'Franklin Gothic Medium','Arial Narrow','Arial', 'sans-serif';
+margin:50px;
+}

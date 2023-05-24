@@ -1,0 +1,25 @@
+.msjcarrito{
+    display:flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.blink {
+    display: block;
+    text-decoration: none;
+    margin-block: 20px;
+    padding: 10px 30px;
+    background-color: #a29481;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: auto;
+    margin-top: 5px;
+    color:#fff;
+    text-align: center;
+    width: 300px;
+}
+.tot{
+    text-align: center;
+}

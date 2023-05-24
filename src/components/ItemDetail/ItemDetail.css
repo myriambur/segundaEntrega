@@ -1,25 +1,86 @@
-.btnDetail {
-    background-color: bisque;
-    width: 100px;
-    border: 10px;
-    padding: 15px 30px;
+ .btn {
+     display: block;
+     text-decoration: none;
+     margin-block: 20px;
+     padding: 10px 30px;
+     background-color: #a29481;
+     border: none;
+     border-radius: 5px;
+     font-weight: bold;
+     margin-left: 15px;
+     color: #e4dfd0;
+     text-align: center;
+ }
+
+ .tarjetas {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+     margin-block-start: 40px;
+ }
+
+ .tarjeta {
+     width: 350px;
+     margin: 10px;
+     margin-block-end: 20px;
+     font-family: Quicksand-Light;
+     border: solid 1px;
+     overflow: hidden;
+     padding: 10px 20px 20px 20px;
+     font-weight: bold;
+     background: #fff;
+ }
+
+ .card-col-img {
+     width: 100%;
+ }
+
+ .tarjeta-info h2 {
+    color:green;
+ }
+
+ .btnDetail {
+    display: block;
+    text-decoration: none;
     text-align: center;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 8px;
-    padding: 10px;
-    margin-top: 10px;
-    color: darkolivegreen;
+    margin-block: 20px;
+    padding: 10px 30px;
+    background-color: goldenrod;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    width: 200px;
 }
 
-.detail {
-    margin-top: 50px;
-    color: white;
-    border-color: green;
-    background-color: burlywood;
-    /* border-radius: 20px; */
-    overflow: hidden;
-    max-width: 800px;
-    padding: 10px;
-}
+
+ .footer {
+     background-color: #c9c1b0;
+
+ }
+
+ .footer .caja {
+     text-decoration: none;
+     display: flex;
+     justify-content: center;
+ }
+
+ .footer p {
+     font-family: Quicksand-Light;
+     font-size: 10px;
+     text-align: center;
+     margin-block-start: 30px;
+     font-weight: bold;
+     top: end;
+ }
+
+ .footer img {
+     width: 35px;
+     height: 35px;
+     margin-block-start: 20px;
+     padding: 5px;
+
+ }

@@ -8,10 +8,10 @@ export const getProducts = () => {
     })
 }
 
-export const getProductById = (productId) => {
+export const getProductById = (itemId) => {
     return new Promise((resolve) => {
         setTimeout(() => {
-            resolve(list.find(prod => prod.id === productId ))
+            resolve(list.find(prod => prod.id === itemId ))
         }, 500)
     })
 }
