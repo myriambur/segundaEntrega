@@ -1,17 +1,21 @@
 {
-  "name": "segundaentrega",
+  "name": "calidaddevida",
   "private": true,
   "version": "0.0.0",
+  "homePage":"https://myriambur.github.io/calidaddevida/",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy":"vite build",
+    "deploy":"gh-pages -d dist"
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
     "firebase": "^9.22.0",
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.0",

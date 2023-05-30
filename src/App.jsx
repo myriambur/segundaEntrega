@@ -8,12 +8,11 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { CartProvider } from './context/CartContext';
 import Cart from './components/Cart/Cart'; 
 import Checkout from './components/Checkout/Checkout'; 
-import {OrdersList} from './components/OrdersList/OrdersList'; 
 
 function App() {
   return (
     <React.Fragment>
-      <BrowserRouter >
+      <BrowserRouter basename="/calidaddevida">
       <CartProvider>
         <NavBar />
         <Routes>
