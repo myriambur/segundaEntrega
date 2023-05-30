@@ -1,4 +1,4 @@
-Título e imagen de portada;
+zTítulo e imagen de portada;
 Trabajo Final Cursor React CoderHouse
 
 El presente trabajo se desarrolla sobre React, simulando un circuito de Ecommerce tradicional.
