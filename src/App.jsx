@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { CartProvider } from './context/CartContext';
 import Cart from './components/Cart/Cart'; 
 import Checkout from './components/Checkout/Checkout'; 
+import {OrdersList} from './components/OrdersList/OrdersList'; 
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path='/cart' element={<Cart />} />
           <Route path='/checkout' element={<Checkout />} />
           <Route path='*' element={<h1>404 NOT FOUND</h1>} />
+          <Route path='/' element={<OrdersList />} />
         </Routes>
         </CartProvider>
       </BrowserRouter>
