@@ -2,7 +2,6 @@
   "name": "calidaddevida",
   "private": true,
   "version": "0.0.0",
-  "homePage":"https://myriambur.github.io/calidaddevida/",
   "type": "module",
   "scripts": {
     "dev": "vite",
