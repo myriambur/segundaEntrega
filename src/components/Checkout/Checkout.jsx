@@ -3,6 +3,8 @@ import { useForm } from "../../hooks/useForm"
 import { CartContext } from "../../context/CartContext"
 import { useContext } from "react"
 import './Checkout.css'
+import { useNavigate } from "react-router-dom"
+import Swal from 'sweetalert2'
 
 const Checkout = () => {
 
@@ -14,10 +16,9 @@ const Checkout = () => {
     phone: '',
     email: ''
   })
+  const navigate = useNavigate()
 
   const handleSubmit = (e) => {
-
-    //const [orderId, SetOrderID] = useState('')
 
     e.preventDefault()
     const db = getFirestore()
@@ -32,13 +33,14 @@ const Checkout = () => {
       date: new Date()
     }
 
-    console.log(newOrderObj)
 
     addDoc(ordersCollection, newOrderObj)
-      .then(({id}) => console.log(id))
+      .then(({ id }) => Swal.fire('Se genero la orden de compra con codigo '+id.toString()))
       .catch(error => console.error(error))
 
-    reset()
+
+      navigate("/")
+
   }
 
   return (
