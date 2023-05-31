@@ -12,7 +12,7 @@ import Checkout from './components/Checkout/Checkout';
 function App() {
   return (
     <React.Fragment>
-      <BrowserRouter >
+      <BrowserRouter>
       <CartProvider>
         <NavBar />
         <Routes>
@@ -22,7 +22,7 @@ function App() {
           <Route path='/cart' element={<Cart />} />
           <Route path='/checkout' element={<Checkout />} />
           <Route path='*' element={<h1>404 NOT FOUND</h1>} />
-        </Routes>
+         </Routes>
         </CartProvider>
       </BrowserRouter>
     </React.Fragment>
